@@ -1,0 +1,12 @@
+# Python "junk" files
+__pycache__/
+*.pyc
+
+# Jupyter Notebook "junk" files
+.ipynb_checkpoints/
+
+# VS Code "junk" files
+.vscode/
+
+# Our environment "toolbox"
+/cta_env/
