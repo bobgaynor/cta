@@ -10,5 +10,15 @@ __pycache__/
 
 # Our environment "toolbox"
 /cta_env/
+
 # Secret files
 .env
+
+# --- OS-Specific Junk Files ---
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
