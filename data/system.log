@@ -1,8 +1,77 @@
-2023-10-27T14:01:03 [INFO] System startup complete.
-2023-10-27T14:02:15 [INFO] User 'admin' logged in from 192.168.1.100
-2023-10-27T14:02:45 [WARNING] Disk space low on /var. 85% used.
-2023-10-27T14:03:10 [ERROR] Failed to connect to database [db-01]. IP 10.0.0.5
-2023-10-27T14:03:12 [INFO] Retrying connection...
-2023-10-27T14:03:42 [ERROR] Connection to [db-01] timed out. IP 10.0.0.5
-2023-10-27T14:05:01 [ERROR] Failed login for user 'root' from IP 1.2.3.4
-2023-10-27T14:05:02 [ERROR] Failed login for user 'guest' from IP 99.88.77.66
+Oct 10 00:01:01 server-01 CRON[1001]: (root) CMD (run-parts /etc/cron.daily)
+Oct 10 00:15:22 server-01 sshd[1020]: Failed password for root from 1.2.3.4 port 12345
+Oct 10 00:15:26 server-01 sshd[1020]: Failed password for root from 1.2.3.4 port 12345
+Oct 10 01:10:15 server-01 sshd[1101]: Received disconnect from 103.207.39.18: 11: Bye Bye
+Oct 10 01:30:05 server-01 webapp[505]: [INFO] API query for /api/v1/status from 1.1.1.1
+Oct 10 02:14:15 server-01 sshd[1201]: Accepted password for user researcher from 192.168.1.10
+Oct 10 02:30:11 server-01 sshd[1230]: Failed password for invalid user guest from 222.186.17.182 port 22
+Oct 10 02:30:15 server-01 sshd[1230]: Failed password for invalid user guest from 222.186.17.182 port 22
+Oct 10 03:01:09 server-01 kernel: [2101.001] usb 1-1: New USB device found, idVendor=1d6b
+Oct 10 03:05:11 server-01 CRON[2250]: (root) CMD (run-parts /etc/cron.hourly)
+Oct 10 03:15:11 server-01 sshd[2260]: Failed password for root from 1.2.3.4 port 22
+Oct 10 04:15:22 server-01 systemd[1]: Starting Daily apt download activities...
+Oct 10 04:30:01 server-01 sshd[2301]: Failed password for root from 185.191.205.10 port 443
+Oct 10 04:30:05 server-01 sshd[2301]: Failed password for root from 185.191.205.10 port 443
+Oct 10 05:01:10 server-01 systemd[1]: Started Session 3 of user root.
+Oct 10 05:30:30 server-01 webapp[505]: [INFO] API query for /api/v1/status from 1.1.1.1
+Oct 10 06:22:01 server-01 sshd[2405]: Failed password for root from 104.248.153.212 port 443
+Oct 10 06:22:05 server-01 sshd[2405]: Failed password for root from 104.248.153.212 port 443
+Oct 10 06:30:00 server-01 systemd[1]: Reloading nginx configuration...
+Oct 10 06:30:01 server-01 nginx[2420]: [INFO] Configuration reloaded successfully.
+Oct 10 07:00:01 server-01 CRON[2450]: (root) CMD (check backups)
+Oct 10 07:15:15 server-01 sshd[2460]: Failed password for admin from 222.186.17.182 port 2222
+Oct 10 08:00:00 server-01 kernel: [3000.001] WARNING: CPU0 soft lockup - CPU#0 stuck for 22s!
+Oct 10 08:05:00 server-01 sshd[2500]: Accepted publickey for user admin from 192.168.1.50
+Oct 10 08:15:00 server-01 webapp[505]: [INFO] User login for user 'alice' from 192.168.1.50
+Oct 10 09:10:05 server-01 webapp[505]: [INFO] User login for user 'bob' from 8.8.8.8
+Oct 10 09:20:11 server-01 webapp[505]: [ERROR] Database connection failed. IP 10.0.5.10
+Oct 10 09:20:12 server-01 webapp[505]: [INFO] Retrying connection...
+Oct 10 09:30:01 server-01 sshd[2550]: Failed password for root from 45.9.148.190 port 36728
+Oct 10 10:00:01 server-01 webapp[505]: [INFO] API query /api/v1/data from 1.1.1.1
+Oct 10 10:15:22 server-01 sshd[2560]: Failed password for user 'guest' from 1.2.3.4 port 12345
+Oct 10 11:30:15 server-01 sshd[2601]: Failed password for root from 185.191.205.10 port 22
+Oct 10 11:30:19 server-01 sshd[2601]: Failed password for root from 185.191.205.10 port 22
+Oct 10 12:00:01 server-01 CRON[2700]: (root) CMD (run-parts /etc/cron.daily)
+Oct 10 12:15:01 server-01 sshd[2715]: pam_unix(sshd:auth): authentication failure; rhost=45.9.148.190  user=root
+Oct 10 12:15:03 server-01 sshd[2715]: Failed password for root from 45.9.148.190 port 36728
+Oct 10 12:15:06 server-01 sshd[2715]: Failed password for root from 45.9.148.190 port 36728
+Oct 10 13:01:00 server-01 systemd[1]: Starting backup service...
+Oct 10 13:05:00 server-01 rsync[2800]: [INFO] Backup complete to 10.0.5.100.
+Oct 10 14:00:00 server-01 webapp[505]: [INFO] User 'alice' accessed /dashboard from 8.8.8.8
+Oct 10 14:00:05 server-01 webapp[505]: [INFO] API query for /api/v1/users from 1.1.1.1
+Oct 10 14:00:10 server-01 webapp[505]: [INFO] API query for /api/v1/users from 1.1.1.1
+Oct 10 14:05:01 server-01 sshd[2900]: Invalid user support from 104.248.153.212 port 48320
+Oct 10 14:05:05 server-01 sshd[2900]: Failed password for invalid user support from 104.248.153.212 port 48320
+Oct 10 14:15:11 server-01 sshd[2910]: Failed password for root from 1.2.3.4 port 22
+Oct 10 15:00:01 server-01 webapp[505]: [ERROR] Payment processing failed for user 'bob'. IP 10.0.5.10
+Oct 10 15:00:02 server-01 webapp[505]: [INFO] Retrying payment...
+Oct 10 15:30:01 server-01 sshd[2930]: Failed password for admin from 222.186.17.182 port 22
+Oct 10 16:01:00 server-01 systemd[1]: Started Session 4 of user root.
+Oct 10 16:05:30 server-01 sshd[3001]: Failed password for root from 198.55.103.22 port 50312
+Oct 10 16:05:34 server-01 sshd[3001]: Failed password for root from 198.55.103.22 port 50312
+Next step:
+Oct 10 16:05:38 server-01 sshd[3001]: Failed password for root from 198.55.103.22 port 50312
+Oct 10 17:10:00 server-01 systemd[1]: Reloading firewall rules...
+Oct 10 17:10:01 server-01 ufw[3100]: [INFO] Firewall reloaded.
+Oct 10 18:00:00 server-01 sshd[3150]: Failed password for admin from 1.2.3.4 port 2222
+Oct 10 18:00:04 server-01 sshd[3150]: Failed password for admin from 1.2.3.4 port 2222
+Oct 10 18:30:00 server-01 sshd[3160]: Accepted publickey for user dev_ops from 192.168.1.10
+Oct 10 19:10:01 server-01 webapp[505]: [INFO] User 'charlie' logged out from 8.8.8.8
+Oct 10 19:30:15 server-01 sshd[3170]: pam_unix(sshd:auth): authentication failure; rhost=185.191.205.10  user=root
+Oct 10 19:30:19 server-01 sshd[3170]: Failed password for root from 185.191.205.10 port 443
+Oct 10 20:05:15 server-01 sshd[3201]: Failed password for root from 45.9.148.190 port 443
+Oct 10 20:05:19 server-01 sshd[3201]: Failed password for root from 45.9.148.190 port 443
+Oct 10 21:00:01 server-01 systemd[1]: Nightly maintenance run starting...
+Oct 10 21:00:10 server-01 webapp[505]: [WARNING] High response time (2100ms) for /api/v1/query from 1.1.1.1
+Oct 10 21:30:30 server-01 sshd[3230]: Failed password for admin from 1.2.3.4 port 22
+Oct 10 22:15:01 server-01 sshd[3301]: Failed password for invalid user 'oracle' from 104.248.153.212 port 36728
+Oct 10 22:15:05 server-01 sshd[3301]: Failed password for invalid user 'oracle' from 104.248.153.212 port 36728
+Oct 10 22:30:00 server-01 sshd[3310]: Failed password for root from 222.186.17.182 port 22
+Oct 10 23:00:01 server-01 systemd[1]: Cleaning up old sessions.
+Oct 10 23:00:05 server-01 kernel: [4000.123] ERROR: Out of memory: Kill process 505 (webapp)
+Oct 10 23:00:06 server-01 kernel: [4000.124] Killed process 505 (webapp)
+Oct 10 23:15:01 server-01 sshd[3320]: Failed password for root from 1.2.3.4 port 22
+Oct 10 23:15:05 server-01 sshd[3320]: Failed password for root from 1.2.3.4 port 22
+Oct 10 23:30:10 server-01 sshd[3330]: pam_unix(sshd:auth): authentication failure; rhost=185.191.205.10  user=root
+Oct 10 23:30:14 server-01 sshd[3330]: Failed password for root from 185.191.205.10 port 443
+Oct 10 23:59:59 server-01 sshd[3340]: Failed password for root from 45.9.148.190 port 36728

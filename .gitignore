@@ -22,3 +22,23 @@ __pycache__/
 # Windows
 Thumbs.db
 desktop.ini
+
+# --- Project-Specific Generated Files ---
+
+# Ignore generated chart images
+*.png
+
+# Ignore our threat intel cache file
+ip_threat_cache.json
+
+# Ignore generated data exports
+*.csv
+*.parquet
+
+# Ignore trained model files
+*.pkl
+*.joblib
+
+# Ignore large/private data files
+# (We commit 'system.log.sample', but ignore this)
+system.log
