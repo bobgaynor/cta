@@ -6,13 +6,14 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 def train_model(X, y):
     """
-    Splits the data and trains a Decision Tree Classifier.
+    Splits data and trains a Decision Tree Classifier.
     """
     print("Splitting data for training and testing...")
     
-    # We'll save 20% of the data for a final exam
-    # random_state=42 ensures reproducibility
-    # stratify=y ensures our sets have the same signal/noise balance
+    # Reserve 20% of the data for testing.
+    # random_state=42 ensures that the split is the same every time.
+    # stratify=y ensures the training and test sets have a similar
+    # proportion of "Signal" (threats) to "Noise" (normal logs).
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
     )
@@ -20,29 +21,31 @@ def train_model(X, y):
     print(f"Training set size: {len(X_train)} logs")
     print(f"Test set size: {len(X_test)} logs")
 
-    # Create and train the brain
+    # Create and train the Decision Tree model.
     model = DecisionTreeClassifier(random_state=42)
     model.fit(X_train, y_train)
     
     print("--- Model Training Complete ---")
     
-    # Return the trained brain and the final exam data
+    # Return the trained model and the test data for evaluation.
     return model, X_test, y_test
 
 def evaluate_model(model, X_test, y_test):
     """
-    Evaluates the trained model on the test set and prints a report.
+    Evaluates the model on the test set and prints performance metrics.
     """
     print("Evaluating model performance on test data...")
     
-    # Get the brain's predictions on data it's never seen
+    # Generate predictions on the unseen test data.
     y_pred = model.predict(X_test)
 
-    # --- Generate the Signal Report ---
+    # --- Generate the "Signal" Report ---
     print("\n--- Classification Report ---")
-    print(classification_report(y_test, y_pred))
+    print("This report shows the model's ability to distinguish the Signal from the Noise.")
+    print(classification_report(y_test, y_pred, target_names=['Noise (0)', 'Signal (1)']))
 
     print("\n--- Confusion Matrix ---")
+    print("This matrix shows the raw counts of correct and incorrect predictions.")
     cm = confusion_matrix(y_test, y_pred)
     
     # --- Readable Matrix ---
