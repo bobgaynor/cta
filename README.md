@@ -1,7 +1,28 @@
-![Python Version](https://img.shields.io/badge/Python-3.10-blue) ![Libraries](https://img.shields.io/badge/Libraries-Pandas%20%7C%20scikit--learn-orange) ![License](https://img.shields.io/badge/License-MIT-green) ![Project Status](https://img.shields.io/badge/Status-v1.0%20Complete-brightgreen)
-
-
 # Cyber Threat Analyzer (CTA) v1.0
+
+<!-- Core Technologies -->
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Data-Pandas-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c)
+![Seaborn](https://img.shields.io/badge/Seaborn-4c78a8)
+
+<!-- APIs & Tools -->
+![AbuseIPDB](https://img.shields.io/badge/API-AbuseIPDB-red)
+![Requests](https://img.shields.io/badge/HTTP-Requests-blue)
+![dotenv](https://img.shields.io/badge/Config-python--dotenv-yellowgreen)
+
+<!-- Environment -->
+![Conda](https://img.shields.io/badge/Conda-44A833?logo=anaconda&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+
+<!-- Project Info -->
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-v1.0%20Complete-brightgreen)
+![OMSCS](https://img.shields.io/badge/Built%20For-OMSCS%20Application-B3A369)
+
+---
 
 This project is a complete, end-to-end data pipeline built to demonstrate key skills in Data Engineering, Machine Learning, and MLOps.
 
