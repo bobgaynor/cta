@@ -1,5 +1,5 @@
 # main.py
-# The "On Air Switch" for the Cyber Threat Analyzer (CTA)
+# The On Air Switch for the Cyber Threat Analyzer (CTA).
 
 import sys
 from pathlib import Path
@@ -7,15 +7,15 @@ import os
 from dotenv import load_dotenv
 
 # --- Path Fix ---
-# Add the project root to the Python path
-# This allows us to import our 'src' modules
+# Add the project root to the Python path.
+# This allows us to import our src modules.
 project_root = Path(__file__).parent
 if str(project_root) not in sys.path:
     sys.path.append(str(project_root))
     print(f"Added project root to path: {project_root}")
 # --- End Fix ---
 
-# --- Import our "Toolboxes" ---
+# Import project-specific modules.
 import src.data_processing as dp
 import src.threat_intelligence as ti
 import src.model as m
@@ -67,8 +67,7 @@ def run_pipeline():
     print("--- [CTA] Pipeline Run Complete ---")
 
 
-# This is the standard Python "entry point"
-# It means "if someone clicks 'run' on this file,
-# execute the run_pipeline() function."
+# This is the standard Python entry point.
+# It allows the script to be run directly.
 if __name__ == "__main__":
     run_pipeline()
