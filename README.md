@@ -5,8 +5,8 @@
 ![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Data-Pandas-150458?logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c)
-![Seaborn](https://img.shields.io/badge/Seaborn-4c78a8)
+![Matplotlib](https://img.shields.io/badge/Viz-Matplotlib-11557c)
+![Seaborn](https://img.shields.io/badge/Viz-Seaborn-4c78a8)
 
 <!-- APIs & Tools -->
 ![AbuseIPDB](https://img.shields.io/badge/API-AbuseIPDB-red)
