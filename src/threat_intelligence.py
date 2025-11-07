@@ -78,6 +78,8 @@ def build_threat_cache(ip_list, api_key, cache_file='ip_threat_cache.json'):
     else:
         threat_cache = {}
 
+    # Note: This cache is persistent.
+    
     # Process each IP address in the provided list.
     for ip in ip_list:
         # If the IP is not in our cache, we need to query the API.
