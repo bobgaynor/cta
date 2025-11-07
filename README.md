@@ -166,3 +166,13 @@ As a nod to audio engineering, the project is structured like a recording studio
 * **`data/`**: The "raw audio" (`system.log`) waiting to be mixed.
 * **`environment.yml`**: The "Tech Rider" for Conda, ensuring full reproducibility.
 * **`.gitignore`**: The "noise filter" for Git; ignores secrets, caches, and generated files.
+
+## Future Enhancements
+
+This v1.0 prototype is a solid foundation, and my roadmap for this project includes several key MLOps and ML engineering goals:
+
+* **Improve the Model:** Explore more advanced models beyond the v1.0 Decision Tree (like Random Forests) to improve the 62% baseline accuracy.
+* **Expand Feature Engineering:** Add new data sources to the model to make it "smarter"—for example, looking at the *time between* failed logins, not just the failures themselves.
+* **Deploy as an API:** This is my next major learning block. I plan to containerize this pipeline using **Docker** and deploy the model as a live, real-time web API using **FastAPI** so other tools could use it.
+* **Build a Test Suite:** Add a formal `tests/` folder with `pytest` to automatically verify that the data parsing and API logic work as expected, ensuring the pipeline is reliable.
+* **Automate the Pipeline:** Integrate the project with GitHub Actions (CI/CD) to automatically test and run the pipeline, moving it from a manual script to a continuous, automated service.
