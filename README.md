@@ -1,4 +1,13 @@
-# Cyber Threat Analyzer (CTA) v1.0
+# Cyber Threat Analyzer (CTA)
+
+Machine-learning pipeline for detecting brute-force activity by revealing the signal hidden in noisy log data.
+
+This project is a complete, end-to-end data workflow designed to demonstrate key skills in machine learning, security analysis, and data-driven engineering.
+
+The core theme is **“signal in the noise.”** The application ingests a raw system.log file (99% noise) and uses a machine-learning model to find the 1% signal of a brute-force attack.
+
+This repository is part of my professional portfolio, showcasing the full engineering lifecycle of a reproducible ML-for-security project.
+
 
 <!-- Core Technologies -->
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
@@ -20,23 +29,18 @@
 <!-- Project Info -->
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-v1.0%20Complete-brightgreen)
-![OMSCS](https://img.shields.io/badge/Built%20For-OMSCS%20Application-B3A369)
 
 ---
 
-This project is a complete, end-to-end data pipeline built to demonstrate key skills in Data Engineering, Machine Learning, and MLOps.
-
-The core theme is **"Signal in the Noise."** The application ingests a raw `system.log` file (99% "noise") and uses a machine learning model to find the 1% "signal" of a brute force attack.
-
-This repository is designed to showcase the full engineering lifecycle for my professional portfolio.
-
 ## Project Motivation
 
-As a cybersecurity professional, I was inspired by the need to perform manual, deep-dive analysis on anomalous security logs that automated tools often miss. This project demonstrates my ability to:
+As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can surface those patterns and support predictive detection approaches.
 
-* Design end-to-end ML pipelines from raw data to model deployment
-* Apply machine learning to real-world security problems
-* Build production-quality code with proper software engineering practices
+It showcases my ability to:
+
+- Design end-to-end ML pipelines from raw data to model evaluation  
+- Apply machine learning to real-world security problems  
+- Build production-quality code with clean structure and engineering discipline  
 
 ## Pipeline Overview
 
@@ -156,7 +160,7 @@ ACTUAL Signal (1)   4          3
 * **API Efficiency:** Intelligent caching reduced queries by ~90%
 * **Processing Time:** <2 seconds for full pipeline execution
 
-## Project Structure (The "Studio")
+## Project Structure
 
 As a nod to audio engineering, the project is structured like a recording studio:
 
