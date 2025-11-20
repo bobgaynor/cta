@@ -4,7 +4,7 @@ Machine-learning pipeline for detecting brute-force activity by revealing the si
 
 This project is a complete, end-to-end data workflow designed to demonstrate key skills in machine learning, security analysis, and data-driven engineering.
 
-The core theme is **“signal in the noise.”** The application ingests a raw system.log file (99% noise) and uses a machine-learning model to find the 1% signal of a brute-force attack.
+The core theme is **“signal in the noise.”** The application ingests a raw system.log file (99% noise) and uses a machine-learning model to find the 1% signal of security-relevant activity (demonstrated here using brute-force patterns).
 
 This repository is part of my professional portfolio, showcasing the full engineering lifecycle of a reproducible ML-for-security project.
 
@@ -34,7 +34,7 @@ This repository is part of my professional portfolio, showcasing the full engine
 
 ## Project Motivation
 
-As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can surface those patterns and support predictive detection approaches.
+As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can find those hidden patterns and support predictive detection approaches.
 
 It showcases my ability to:
 
@@ -59,20 +59,9 @@ Raw Logs → Parse & Extract → Threat Intelligence Enrichment → Feature Engi
 
 ## Development Approach: Modern ML Engineering
 
-This project, the **Cyber Threat Analyzer (CTA)**, was designed to master and demonstrate a modern, MLOps-driven workflow.
+This project was built using a modern, human-in-the-loop workflow. I led all architectural decisions, designed the full pipeline, and implemented the core system end-to-end. I used AI tools throughout the process for targeted assistance with refactoring, debugging, and automated code review, similar to how engineers use pair programming or linting automation.
 
-It was built using an intensive **Human-AI collaboration**.
-
-* **My Role (Bob Gaynor): The Architect & Tech Lead**
-    As the project owner, I served as the "Tech Lead." I defined the entire roadmap, set all project goals, and was the "human-in-the-loop" who debugged, tested, and made all final architectural decisions (like refactoring into `src/` and managing the `git` history).
-
-* **AI Role 1: The "Senior Mentor" / "Pair Programmer" (Google Gemini)**
-    I used Google Gemini as my "on-demand senior mentor." I bounced ideas off it, asked it to help "pair program" and refactor functions, and used it as a "debugger" to find errors. This demonstrates a modern workflow of using AI to accelerate *learning* and *development*.
-
-* **AI Role 2: The "Code Reviewer" (Google Jules)**
-    After the core logic was completed, I used the `google-labs-jules[bot]` agent to perform an automated "style and linting" review. This is why the bot appears as a contributor (for fixing whitespace, improving docstrings, etc.). This demonstrates using AI for *automated quality assurance*.
-
-This project's value is not just in the final code, but in the *process*. It's a "Top-Down" showcase of how a modern engineer can *lead and orchestrate* AI tools to build, debug, and ship a reproducible ML pipeline from scratch.
+The goal was not only to build a functional ML pipeline, but to demonstrate a modern engineering approach where AI accelerates development while the human engineer remains fully in control of design, structure, and correctness.
 
 ## How to Run This Project
 
