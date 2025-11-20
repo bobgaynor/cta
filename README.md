@@ -34,7 +34,7 @@ This repository is part of my professional portfolio, showcasing the full engine
 
 ## Project Motivation
 
-As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can find those hidden patterns and support predictive detection approaches.
+As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can uncover the signal buried in routine activity and support predictive detection approaches.
 
 It showcases my ability to:
 
