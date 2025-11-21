@@ -151,7 +151,7 @@ ACTUAL Signal (1)   4          3
 
 ## Project Structure
 
-The layout is modeled after a recording session, aligning with the process of isolating signal from noise in security data.
+The layout is modeled after a recording session, aligning with the process of isolating signal from noise in security data:
 
 * **`main.py`**: The **"Session Start"** script, serving as the main entry point to run the pipeline.
 * **`src/`**: The **"Signal Chain"**, containing all modular Python code.
