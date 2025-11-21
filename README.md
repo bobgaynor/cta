@@ -4,7 +4,7 @@ Machine-learning pipeline for detecting brute-force activity by revealing the si
 
 This project is a complete, end-to-end data workflow designed to demonstrate key skills in machine learning, security analysis, and data-driven engineering.
 
-The core theme is **“signal in the noise.”** The application ingests a raw system.log file (99% noise) and uses a machine-learning model to find the 1% signal of security-relevant activity (demonstrated here using brute-force patterns).
+The core theme is **“finding the signal in the noise.”** The application ingests a raw system.log file (99% noise) and uses a machine-learning model to find the 1% signal of security-relevant activity (demonstrated here using brute-force patterns).
 
 This repository is part of my professional portfolio, showcasing the full engineering lifecycle of a reproducible ML-for-security project.
 
@@ -34,7 +34,7 @@ This repository is part of my professional portfolio, showcasing the full engine
 
 ## Project Motivation
 
-As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can uncover the signal buried in routine activity and support predictive detection approaches.
+As a cybersecurity professional, I often analyze noisy system and network logs where meaningful signals are buried in routine activity. This project demonstrates how machine learning can uncover meaningful patterns hidden in noisy operational data and support predictive detection approaches.
 
 It showcases my ability to:
 
@@ -53,7 +53,7 @@ Raw Logs → Parse & Extract → Threat Intelligence Enrichment → Feature Engi
 * **Data Pipeline:** Ingests and parses raw, unstructured log files using Python and Regex.
 * **Threat Intel Enrichment:** Automatically enriches all found IP addresses with live threat data from the AbuseIPDB API (using a secure `env` key).
 * **Intelligent Caching:** Uses a JSON cache (`ip_threat_cache.json`) to avoid re-querying the API, saving time and resources.
-* **ML Noise Filter:** Trains a v1.0 Decision Tree model (`scikit-learn`) to automatically classify logs as "Noise" (0) or "Signal" (1) based on their features.
+* **ML Noise Filter:** Trains a v1.0 Decision Tree model to separate noise from signal by classifying logs as "Noise" (0) or "Signal" (1) based on their features.
 * **Reproducible Environment:** Includes a complete `environment.yml` file to build the exact Conda `cta_env` needed to run the project.
 * **Modular & Clean:** All logic is refactored into the "Studio Rack" (`src/`), separating the core logic from the "Studio Notes" (`notebooks`) and the "On Air Switch" (`main.py`).
 
@@ -151,14 +151,14 @@ ACTUAL Signal (1)   4          3
 
 ## Project Structure
 
-As a nod to audio engineering, the project is structured like a recording studio:
+The layout is modeled after a recording session, aligning with the process of isolating signal from noise in security data.
 
-* **`main.py`**: The **"On Air Switch"** script. This is the main entry point to run the demo.
-* **`src/`**: The **"Studio Rack"** containing all modular Python code.
-* **`notebooks/`**: The **"Studio Notes"** (my "scratchpad") containing the original `01-EDA.ipynb`.
-* **`data/`**: The "raw audio" (`system.log`) waiting to be mixed.
-* **`environment.yml`**: The "Tech Rider" for Conda, ensuring full reproducibility.
-* **`.gitignore`**: The "noise filter" for Git; ignores secrets, caches, and generated files.
+* **`main.py`**: The **"Session Start"** script, serving as the main entry point to run the pipeline.
+* **`src/`**: The **"Signal Chain"**, containing all modular Python code.
+* **`notebooks/`**: The **"Scratch Tracks"**, including the original `01-EDA.ipynb`.
+* **`data/`**: The **"Raw Takes"** (`system.log`) waiting to be mixed.
+* **`environment.yml`**: The **"Studio Setup"** for Conda, ensuring full reproducibility.
+* **`.gitignore`**: The **"Noise Filter"** for Git; ignores secrets, caches, and generated files.
 
 ## Future Enhancements
 
