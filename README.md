@@ -55,7 +55,7 @@ Raw Logs → Parse & Extract → Threat Intelligence Enrichment → Feature Engi
 * **Intelligent Caching:** Uses a JSON cache (`ip_threat_cache.json`) to avoid re-querying the API, saving time and resources.
 * **ML Noise Filter:** Trains a v1.0 Decision Tree model to separate noise from signal by classifying logs as "Noise" (0) or "Signal" (1) based on their features.
 * **Reproducible Environment:** Includes a complete `environment.yml` file to build the exact Conda `cta_env` needed to run the project.
-* **Modular & Clean:** All logic is refactored into the "Studio Rack" (`src/`), separating the core logic from the "Studio Notes" (`notebooks`) and the "On Air Switch" (`main.py`).
+* **Modular & Clean:** All logic is refactored into the "Signal Chain" (`src/`), separating the core logic from the "Scratch Tracks" (`notebooks`) and the "Session Start" (`main.py`).
 
 ## Development Approach: Modern ML Engineering
 
