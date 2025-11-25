@@ -89,14 +89,14 @@ echo "ABUSEIPDB_KEY=YOUR_API_KEY_GOES_HERE" > .env
 
 The echo command above creates the .env file for you, but you can also just copy the config_template.env file (included in this repo) to .env and paste your key there.
 
-### 2. Run the "On Air Switch"
+### 2. Session Start
 
 Anytime you want to run the full analysis:
 ```bash
 # 1. Activate the environment
 conda activate cta_env
 
-# 2. Run the "On Air Switch"
+# 2. Run the "Session Start" script
 python main.py
 ```
 
